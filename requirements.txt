@@ -1,0 +1,17 @@
+# Fine-tuning
+torch
+transformers>=4.44
+datasets
+peft
+trl
+bitsandbytes
+accelerate
+# Assistente
+langchain
+langchain-community
+langchain-core
+langgraph
+# Utilidades
+pandas
+pyyaml
+pytest

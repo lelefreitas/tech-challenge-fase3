@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+venv/
+.env
+finetune/outputs/
+data/raw/
+logs/*.jsonl
+*.db

@@ -1,0 +1,19 @@
+model:
+  base: Qwen/Qwen2.5-1.5B-Instruct
+  adapter_dir: finetune/outputs/adapter
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+train:
+  epochs: 1
+  batch_size: 2
+  grad_accum: 8
+  lr: 2.0e-4
+  max_seq_len: 1024
+data:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  db_path: data/hospital.db
+logging:
+  audit_log: logs/audit.jsonl
